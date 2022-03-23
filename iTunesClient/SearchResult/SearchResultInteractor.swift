@@ -41,7 +41,7 @@ class SearchResultInteractorImplementation: SearchResultInteractor {
                         }
                     }
                 }
-                self.presenter?.interactorViewDidLoad(results: [])
+                self.presenter?.interactorViewDidLoad(results: resultsTemp)
             }
 
         }

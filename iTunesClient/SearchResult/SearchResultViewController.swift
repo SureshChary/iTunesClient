@@ -48,6 +48,7 @@ class SearchResultViewController: UIViewController {
         let imageView = UIImageView(image: logo)
         self.navigationItem.titleView = imageView
         if let intent = intent {
+            self.view.activityStartAnimating(activityColor: .white, backgroundColor: UIColor.black.withAlphaComponent(0.5))
             interactor?.viewDidLoad(intent: intent)
         }
     }
@@ -121,14 +122,16 @@ extension SearchResultViewController: UICollectionViewDataSource {
 extension SearchResultViewController: SearchResultPresenterOutput {
     func showErrorAler(message: String) {
         DispatchQueue.main.async {
-            self.showErrorAler(message: message)
+            self.view.activityStopAnimating()
+            self.showError(with: message)
         }
     }
 
     func presenterViewDidLoad(results: [ResultDataModel]) {
         self.resultDataModel = results
         DispatchQueue.main.async {
-        self.collectionView.reloadData()
+            self.view.activityStopAnimating()
+            self.collectionView.reloadData()
         }
     }
 }

@@ -42,6 +42,7 @@
 		17B19D3227EA59D300647718 /* SearchResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B19D3127EA59D300647718 /* SearchResultPresenter.swift */; };
 		17B19D3427EA59E000647718 /* SearchResultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B19D3327EA59E000647718 /* SearchResultInteractor.swift */; };
 		17B19D3627EAE0AE00647718 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B19D3527EAE0AE00647718 /* UIImageView+Extension.swift */; };
+		17EDB2E827EB73450025F887 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EDB2E727EB73450025F887 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		17B19D3127EA59D300647718 /* SearchResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultPresenter.swift; sourceTree = "<group>"; };
 		17B19D3327EA59E000647718 /* SearchResultInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultInteractor.swift; sourceTree = "<group>"; };
 		17B19D3527EAE0AE00647718 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		17EDB2E727EB73450025F887 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				1749ED7027E99A95003CD091 /* UIViewController+Extension.swift */,
 				17B19D3527EAE0AE00647718 /* UIImageView+Extension.swift */,
+				17EDB2E727EB73450025F887 /* UIView+Extension.swift */,
 			);
 			path = Extesions;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				1776703D27E73315009011C1 /* AppDelegate.swift in Sources */,
 				17B19D3027EA59C400647718 /* SearchResultRouter.swift in Sources */,
 				1776706D27E73918009011C1 /* SearchResultViewController.swift in Sources */,
+				17EDB2E827EB73450025F887 /* UIView+Extension.swift in Sources */,
 				17B19D2C27EA4F6400647718 /* SearchCriteriaPresenter.swift in Sources */,
 				17B19D2727EA374000647718 /* MediaTypesInteractor.swift in Sources */,
 				1749ED7827E9B7DC003CD091 /* ResultModel.swift in Sources */,
